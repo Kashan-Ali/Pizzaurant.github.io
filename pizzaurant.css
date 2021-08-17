@@ -1,0 +1,259 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    /* Header's Portion */
+.index_header {
+    width: 100%;
+    height: 175px;
+    background-color: #333;
+    box-sizing: border-box;
+}
+.head_side {
+    display: inline;
+    float: left;
+    width: 33%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.icon_div {
+    display: inline;
+    float: left;
+    width: 22%;
+    height: 100%;
+    color: #f2f2f2;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+.phone_text {
+    display: inline;
+    float: left;
+    width: 78%;
+    height: 100%;
+    color: #f2f2f2;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    line-height: 22px;
+    padding-top: 60px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.icon_line2 {
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 0.75em;
+}
+.head_icon {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+.head_mid {
+    float: left;
+    width: 34%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-size: 0.85em;
+}
+.heading {
+    display: inline;
+    color: #f2f2f2;
+}
+    /* Navigation Portion */
+nav {
+    background-color: #333;
+    position: sticky;
+    top: 0%;
+}
+nav ul {
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    padding: 20px;
+    border-bottom: 4px solid #f2f2f2;
+    transition: 0.3s ease-out;
+    box-sizing: border-box;
+}
+nav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+nav li:hover {
+    background-color: black;
+    border-bottom: none;
+    border-top: 4px solid #f2f2f2;
+}
+.selec_li {
+    border-bottom: none;
+    border-top: 4px dashed #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.400);
+}
+    /* Content Portion */
+.index_content {
+    width: 100%;
+    height: 700px;
+    clear: both;
+    background-image: url("Images/Pizza_gif1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	background-attachment: fixed;
+}
+.sec_div {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 228, 181, 0.300) 30%, rgba(255, 0, 0, 0.300) 60%);
+}
+.monolog {
+    width: 50%;
+    height: 350px;
+    float: right;
+    background-color: rgba(51, 51, 51, 0.850);
+    margin-top: 175px;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.monolog_btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: rgba(3, 3, 3, 0);
+    border-radius: 10px;
+    border: 2px dashed #f2f2f2;
+    transition: 0.2s ease-in-out;
+}
+.monolog_btn_a {
+    text-decoration: none;
+    font-size: large;
+    color: #f2f2f2;
+}
+.monolog_btn:hover {
+    background-color: black;
+    border: none;
+    border-radius: 0px;
+    border-top: 4px solid #f2f2f2;
+    border-bottom: 4px solid #f2f2f2;
+}
+    /* Footer Portion */
+footer {
+    clear: both;
+    width: 100%;
+    height: 250px;
+    background-image: url("Images/Pizza_Doodle7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.footer_div {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    background-color: rgba(255, 200, 80, 0.863);
+    z-index: 1;
+    box-sizing: border-box;
+}
+.foot_side_div {
+    width: 33%;
+    height: 100%;
+    float: left;
+    display: inline;
+    box-sizing: border-box;
+}
+.foot_mid_div {
+    width: 34%;
+    height: 100%;
+    float: left;
+    display: inline;
+    box-sizing: border-box;
+}
+.foot_icon {
+    width: 15%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+}
+.Foot_caption {
+    text-align: center;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+
+
+
+/* Media Query For Responsinveness */
+
+@media screen and (max-width: 600px) {
+    .head_side {
+        width: 100%;
+        clear: both;
+    }
+    .head_mid {
+        width: 100%;
+        height: 50px;
+        clear: both;
+    }
+
+    nav {
+        position: static;
+    }
+    nav li {
+        width: 100%;
+        clear: both;
+    }
+    
+    .monolog {
+        width: 100%;
+        float: left;
+        clear: both;
+        line-height: 30px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        padding-top: 30px;
+    }
+    .monolog_h1 {
+        font-size: 1em;
+    }
+    .monolog_p {
+        font-size: 0.7em;
+    }
+    .monolog_btn {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .monolog_btn_a {
+        font-size: 1em;
+    }
+
+    footer {
+        height: 300px;
+        font-size: 0.7em;
+    }
+    .foot_side_div {
+        width: 100%;
+        height: 33%;
+        clear: both;
+    }
+    .foot_mid_div {
+        width: 100%;
+        height: 33%;
+        clear: both;
+    }
+    .foot_icon {
+        width: 10%;
+        height: 20%;
+        margin-top: 10px;
+    }
+}
